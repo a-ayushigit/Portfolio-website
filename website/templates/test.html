@@ -1,0 +1,137 @@
+{% extends "test-base.html" %}
+<title>{% block title %} Home {% endblock %}</title>
+<link rel="stylesheet" href="{{ url_for('static',filename='styles.css')}}">
+{% block content %}
+<section id="home" class="height-para">
+    <div class="container">
+         <div class="row">
+               <div class="col-lg-12 text-center px-lg-5">
+                <div class="container-fluid ">
+    
+  <h1 class=" title-text fw-bold mt-3">Welcome</h1><p class="content-text"> to my <b class=" title-text  " >PORTFOLIO</b>.<br/><b class=" title-text  ">Software Development</b> ,<b class="title-text  ">Artificial Intelligence </b> and <b class="title-text   "> Machine Learning </b> being my current field of interest , I'm a <b class="title-text ">Tech enthusiast </b> .  
+    </p>
+  </div>
+    <p class="icon-img">
+      <a href="https://github.com/a-ayushigit"><img src="{{ url_for('static',filename='images/icons8-github.svg')}}" class="icon"></a>
+      <a href="https://www.linkedin.com/in/ankita-ayushi-0abab0254/"><img src="{{ url_for('static',filename='images/icons8-linkedin.svg')}}" class="icon"></a>
+      <a href="#" style="text-decoration:None;color:var(--color-body-change)"><p class="title-text">Call:+91 7004748493</p></a>
+      <a href="#" style="text-decoration:None;color:var(--color-body-change)" ><p class="title-text">Email:ankita.btech21@gmail.com</p></a>
+    </p>
+  </div>
+  </div>
+  </div>
+  </section>
+  <section id="about" class="height-para">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center px-lg-5">
+  <p >
+    <h1 class="title-text fw-bolder">About Me</h1>
+  </p>
+     <div class="container-fluid content-text">
+      <p class="content-text">Born and brought up in Bihar , I have completed my higher secondary education (XII) in DPS Ranchi with PCM (Computer Science). Currently I am pursuing B.Tech in Electrical and Electronics Engineering in BIT Mesra , Ranchi . I have a keen interest in technological developments and their applications in real world . My interest lies in problem solving , web development , machine learning , artificial intelligence and robotics . </p>
+     </div> 
+  
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="skills" class="height-para fw-bolder">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 py-5 skills-text text-center"><h1 class="title-text fw-bolder"> Evolving Skillset</h1></div>
+          <div class="col-4 col-2 text-center icon"><img src="{{ url_for('static',filename='images/icons8-c++.svg')}}"> </div>
+          <div class="col-auto col-4 text-center icon"><img src="{{ url_for('static',filename='images/icons8-python.svg')}}"></div>
+          <div class="col-4 col-2 text-center icon"><img src="{{ url_for('static',filename='images/icons8-javascript.svg')}}"></div>
+          <div class="col-auto col-4  text-center icon"><img src="{{ url_for('static',filename='images/icons8-html.svg')}}"></div>
+          <div class="col-4 col-2 text-center icon"><img src="{{ url_for('static',filename='images/icons8-css.svg')}}"></div>
+          <div class="col-auto col-4  text-center icon"><img src="{{ url_for('static',filename='images/icons8-bootstrap.svg')}}"></div>
+          <div class="col-4 col-2 text-center icon"><img src="{{ url_for('static',filename='images/icons8-git.svg')}}"></div>
+          <div class="col-auto col-4  text-center icon"><img src="{{ url_for('static',filename='images/icons8-numpy.svg')}}"></div>
+          <div class="col-4 col-2 text-center icon"><img src="{{ url_for('static',filename='images/icons8-pandas.svg')}}"></div>
+          <div class="col-auto col-4  text-center icon"><img src="{{ url_for('static',filename='images/icons8-tensorflow.svg')}}"></div>
+          <div class="col-4 col-2 text-center icon"><img src="{{ url_for('static',filename='images/icons8-amazon-web-services.svg')}}"></div>
+          <div class="col-auto col-4  text-center icon"><img src="{{ url_for('static',filename='images/icons8-flask.svg')}}"></div>
+          <div class="col-4 col-2 text-center icon"><img src="{{ url_for('static',filename='images/icons8-google-colab.svg')}}"></div>
+          <div class="col-auto col-4  text-center icon"><img src="{{ url_for('static',filename='images/icons8-opencv.svg')}}"></div>
+          <div class="col-4 col-2 text-center icon"><img src="{{ url_for('static',filename='images/icons8-arduino.svg')}}"></div>
+        </div>
+     
+    </div>
+  
+  </section>
+  <section id="projects" >
+    <div class="container ">
+      <div class="row ">
+        <div class="col-12 text-center px-lg-5 px-sm-3 title-text"><h1 class="text fw-bolder">Tech Explorations</h1></div>
+          <div class="col-sm-12 col-lg-6 col-md-6 text-center px-5 py-5 mb-4 mt-4 icon">
+            <div class="card mx-auto" style="width: 18rem;">
+              <img src="{{ url_for('static',filename='images/portfolio.jpg')}}" class="card-img-top" alt="portfolio">
+              <div class="card-body">
+                <h5 class="card-title fw-bolder">Portfolio</h5>
+                <p class="card-text">A portfolio project , the one  currently visible to you .</p>
+                <a href="#" class="btn btn-primary">GitHub Repo</a>
+              </div>
+            </div>
+            </div>
+            <div class="col-sm-12 col-lg-6 col-md-6 text-center px-5 py-5 mb-4 mt-4 icon">
+              <div class="card mx-auto" style="width: 18rem;">
+                <img src="{{ url_for('static',filename='images/movie-recommendation.jpg')}}" class="card-img-top" alt="movie">
+                <div class="card-body">
+                  <h5 class="card-title fw-bolder">Movie Recommendation web-application</h5>
+                  <p class="card-text">A movie recommendation web application is in progress using frontend languages and flask microframework in the backend implementing content based and collaborative filtering.</p>
+                  <a href="#" class="btn btn-primary">GitHub Repo</a>
+                  <a href="#" class="btn btn-primary">Link</a>
+                </div>
+              </div>
+              </div>
+              <div class="col-sm-12 col-lg-6 col-md-6 text-center px-5 py-5 mb-4 mt-4 icon">
+                <div class="card mx-auto" style="width: 18rem;">
+                  <img src="{{ url_for('static',filename='images/wifi-car.jpeg')}}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bolder">Robotics Endeavours</h5>
+                    <p class="card-text">Some of my contributions in the world of robotics - wifi controlled car , wall follower bot and few more to come in future.</p>
+                    <a href="#" class="btn btn-primary">GitHub Repo</a>
+                  </div>
+                </div>
+                </div>
+          </div>
+          </div>
+          
+  
+  </section>
+  <section id="contact" >
+    <h1 class="title-text text-center fw-bolder">Contact Me</h1>
+     <div class="container-fluid">
+      <div class="col-lg-12">
+        <form method = 'post' action="/" class="row g-lg-3 gy-3">
+          <div class="form-group col-12">
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group col-12">
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
+    
+          </div>
+          <div class="form-group col-12">
+            <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter  subject">
+            </div>
+            <div class="form-group col-12">
+                      <textarea class="form-control" id="message" name="message" rows="4" placeholder="Enter your message"></textarea>
+                      </div>
+                      <div class="form-group col-12">
+                        <button id="button" type="submit"class="btn btn-primary py-1 mb-1">Send Me</button>
+                      </div>
+        </form>
+  
+            </div>
+            </div>
+  
+     
+     <hr/>
+     <div class="container-fluid mb-0 pb-0 text-center">Copyright at Ankita Ayushi</div>
+  </section>
+
+
+
+
+{% endblock %}
